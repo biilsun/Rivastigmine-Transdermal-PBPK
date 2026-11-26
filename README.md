@@ -240,7 +240,10 @@ Per **FDA NDA 022-083 Clinical Pharmacology Review**, rivastigmine transdermal P
 16. **US Food and Drug Administration (FDA).** *Exelon® Patch (rivastigmine transdermal system) Prescribing Information (§11, §12.3) & Clinical Pharmacology and Biopharmaceutics Reviews (NDA 022-083, 2007; Supplemental NDA 022-083/S-016 Review, Reference ID: 3171226, Aug 31, 2012, p. 202)*; *Exelon® Capsules and Oral Solution Prescribing Information (NDA 020-823, §11, §12.3, 2000)*.
 17. **European Medicines Agency (EMA) & Health Canada.** *Exelon / Prometax Summary of Product Characteristics (SmPC, §5.1, §5.2) & EPAR Scientific Discussion*; *Health Canada Exelon® Product Monograph*.
     ---
-## 8. Author and Contact
+---
 
-* **Author:** Aleksandr Loginov
-* **Contact:** biilsun81@gmail.com
+## 8. Author, License, and Disclaimer
+
+* **Author:** Aleksandr Loginov (`biilsun81@gmail.com`)
+* **License:** Released under the [MIT License](LICENSE).
+* **Research-Only & Liability Disclaimer:** This PBPK model, associated parameterizations, and simulation outputs are provided **"AS IS"**, without warranty of any kind, express or implied, strictly for **scientific research and educational purposes**. They have not been qualified by any regulatory agency for clinical use and **must not be used for medical advice, clinical decision-making, or patient dosing**. In no event shall the author be held liable for any claim, damages, or other liability arising from the use, interpretation, or modification of this repository.
