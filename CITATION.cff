@@ -1,19 +1,80 @@
 cff-version: 1.2.0
-title: "Mechanistic Dermal-Whole-Body PBPK Model of Rivastigmine Transdermal Patch in Humans (OSP Suite v12.3)"
+title: "Coupled Dermal-Permeation and Whole-Body PBPK Model of Rivastigmine Transdermal Patch in Humans (OSP Suite v12.3)"
 message: "If you use this model or curated clinical datasets, please cite this repository."
 type: software
 authors:
   - family-names: "Loginov"
     given-names: "Aleksandr"
     email: "biilsun81@gmail.com"
+abstract: "Open-source coupled mechanistic dermal permeation (Dancik et al., 2013) and calibrated middle-out whole-body human PBPK model (Berezhkovskiy tissue partitioning, linear first-order BuChE clearance) for the rivastigmine transdermal patch (5, 10, 15, and 20 cm²) in Open Systems Pharmacology Suite v12.3 (PK-Sim and MoBi)."
 version: 1.0.0
 date-released: "2026-11-26"
 license: GPL-2.0-only
+repository-code: "https://github.com/biilsun/Rivastigmine-Transdermal-PBPK"
 keywords:
   - PBPK
-  - rivastigmine
-  - transdermal patch
-  - dermal absorption
+  - physiologically based pharmacokinetics
+  - osp-model
   - Open Systems Pharmacology
   - PK-Sim
   - MoBi
+  - rivastigmine
+  - transdermal patch
+  - dermal absorption
+  - Alzheimer's disease
+references:
+  - type: article
+    title: "Design and performance of a spreadsheet-based model for estimating bioavailability of chemicals from dermal exposure"
+    authors:
+      - family-names: "Dancik"
+        given-names: "Yuri"
+      - family-names: "Miller"
+        given-names: "Matthew A."
+      - family-names: "Jaworska"
+        given-names: "Joanna"
+      - family-names: "Kasting"
+        given-names: "Gerald B."
+    year: 2013
+    journal: "Advanced Drug Delivery Reviews"
+    volume: 65
+    issue: 2
+    start: 221
+    end: 236
+    doi: "10.1016/j.addr.2012.01.006"
+  - type: software
+    title: "Implementation of Dancik et al (2013) skin permeation model in MoBi"
+    authors:
+      - family-names: "Hamadeh"
+        given-names: "Abdullah"
+      - family-names: "Sevestre"
+        given-names: "Maxime"
+      - family-names: "Edginton"
+        given-names: "Andrea"
+    year: 2019
+    repository-code: "https://github.com/Open-Systems-Pharmacology/Skin-permeation-model"
+  - type: article
+    title: "Volume of distribution at steady state for a linear pharmacokinetic system with peripheral elimination"
+    authors:
+      - family-names: "Berezhkovskiy"
+        given-names: "Leonid M."
+    year: 2004
+    journal: "Journal of Pharmaceutical Sciences"
+    volume: 93
+    issue: 6
+    start: 1628
+    end: 1640
+    doi: "10.1002/jps.20073"
+  - type: article
+    title: "Absolute bioavailability and safety of a novel rivastigmine nasal spray in healthy elderly individuals"
+    authors:
+      - family-names: "Morgan"
+        given-names: "Timothy M."
+      - family-names: "Soh"
+        given-names: "Bob"
+    year: 2017
+    journal: "British Journal of Clinical Pharmacology"
+    volume: 83
+    issue: 3
+    start: 510
+    end: 516
+    doi: "10.1111/bcp.13133"
