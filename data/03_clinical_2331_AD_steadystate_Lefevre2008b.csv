@@ -1,0 +1,5 @@
+Dataset,Time [h],Concentration [ng/ml],SD [ng/ml],Patch_size_cm2,Design,Population,Source
+Patch_5cm2_2331_SS,8.0,2.70,1.20,5,multiple-dose steady state,AD patients (n=51),"Lefevre et al. 2008b CPT 83:106-114 Table 2 doi:10.1038/sj.clpt.6100242"
+Patch_10cm2_2331_SS,8.0,7.90,2.90,10,multiple-dose steady state,AD patients (n=51),"Lefevre et al. 2008b CPT 83:106-114 Table 2"
+Patch_15cm2_2331_SS,8.0,14.10,6.30,15,multiple-dose steady state,AD patients (n=51),"Lefevre et al. 2008b CPT 83:106-114 Table 2"
+Patch_20cm2_2331_SS,8.0,19.50,7.50,20,multiple-dose steady state,AD patients (n=51),"Lefevre et al. 2008b CPT 83:106-114 Table 2"

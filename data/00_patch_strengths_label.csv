@@ -1,0 +1,5 @@
+Patch_size_cm2,Drug_load_mg,Nominal_release_mg_per_24h,Release_percent_of_load,Nominal_release_umol_per_24h,Approval_status,Source
+5,9,4.6,51,18.375010,approved,"FDA/EU/HC label; Kurz et al. 2009 doi:10.1111/j.1742-1241.2009.02052.x"
+10,18,9.5,53,37.948390,approved,"FDA/EU/HC label; Kurz et al. 2009"
+15,27,13.3,49,53.127746,approved,"FDA/EU/HC label; Kurz et al. 2009"
+20,36,17.4,48,69.505473,NOT approved (17.4 mg/24 h clinical trial arm),"FDA label; Kurz et al. 2009"

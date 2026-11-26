@@ -1,0 +1,9 @@
+Dataset,Time [h],Concentration [ng/ml],SD [ng/ml],Patch_size_cm2,Ethnicity,n,Source
+Patch_5cm2_2335_White,12.0,2.76,1.23,5,White,20,"Lefevre et al. 2009 JCP 49:430-443 Table I doi:10.1177/0091270008330161"
+Patch_7p5cm2_2335_White,14.0,3.99,1.47,7.5,White,12,"Lefevre et al. 2009 JCP 49:430-443 Table I"
+Patch_10cm2_2335_White,12.0,7.29,3.79,10,White,20,"Lefevre et al. 2009 JCP 49:430-443 Table I"
+Patch_15cm2_2335_White,10.0,12.90,4.27,15,White,8,"Lefevre et al. 2009 JCP 49:430-443 Table I; FDA sNDA 22-083"
+Patch_5cm2_2335_Japanese,16.0,2.73,0.89,5,Japanese,19,"Lefevre et al. 2009 JCP 49:430-443 Table I"
+Patch_7p5cm2_2335_Japanese,16.0,4.58,1.61,7.5,Japanese,10,"Lefevre et al. 2009 JCP 49:430-443 Table I"
+Patch_10cm2_2335_Japanese,16.0,6.73,2.40,10,Japanese,19,"Lefevre et al. 2009 JCP 49:430-443 Table I"
+Patch_15cm2_2335_Japanese,16.0,12.50,4.41,15,Japanese,9,"Lefevre et al. 2009 JCP 49:430-443 Table I"

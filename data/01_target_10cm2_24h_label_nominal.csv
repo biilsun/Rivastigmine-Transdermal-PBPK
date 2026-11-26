@@ -1,0 +1,3 @@
+Time [h],Amount [umol],Dataset,Target_type,Note
+0,0.000000,Target_10cm2_label_nominal,nominal label release rate,"not a measurement"
+24,37.948390,Target_10cm2_label_nominal,nominal label release rate,"9.5 mg/24 h nominal; CALIBRATION target only"
