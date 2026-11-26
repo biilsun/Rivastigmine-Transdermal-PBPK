@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Mechanistic Dermal-Whole-Body PBPK Model of Rivastigmine Transdermal Patch in Humans (OSP Suite v12.3)"
+message: "If you use this model or curated clinical datasets, please cite this repository."
+type: software
+authors:
+  - family-names: "Loginov"
+    given-names: "Aleksandr"
+    email: "biilsun81@gmail.com"
+version: 1.0.0
+date-released: "2026-11-26"
+license: MIT
+keywords:
+  - PBPK
+  - rivastigmine
+  - transdermal patch
+  - dermal absorption
+  - Open Systems Pharmacology
+  - PK-Sim
+  - MoBi
