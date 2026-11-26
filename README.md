@@ -1,4 +1,5 @@
 # Coupled Dermal-Permeation and Whole-Body PBPK Model of Rivastigmine Transdermal Patch in Humans (OSP Suite v12.3)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24566554.svg)](https://doi.org/10.5281/zenodo.24566554)
 
 This open-source repository provides a coupled **mechanistic dermal permeation and middle-out whole-body physiologically based pharmacokinetic (PBPK)** model for the **rivastigmine transdermal delivery system** (approved 5 cm², 10 cm², and 15 cm² strengths, plus the unapproved 20 cm² investigational clinical trial arm), implemented in **Open Systems Pharmacology (OSP) Suite v12.3** (`PK-Sim® 12.3` and `MoBi® Version 12.3 - Build 136`).
 
