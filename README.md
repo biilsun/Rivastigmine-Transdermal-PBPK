@@ -11,7 +11,7 @@ The model links the multilayer diffusion-partition skin permeation framework of 
 ```text
 Rivastigmine-Transdermal-PBPK/
 ├── README.md
-├── LICENSE                                                # MIT License (see Section 8 for upstream OSP GPL-2.0 note)
+├── LICENSE                                                # GNU General Public License v2.0 (GPL-2.0)
 ├── CITATION.cff                                           # Citation metadata
 ├── models/
 │   ├── 01_Rivastigmine_Skin_MoBi.mbp3                     # Standalone multilayer skin & patch module (MoBi 12.3)
@@ -245,5 +245,5 @@ Per **FDA NDA 022-083 Clinical Pharmacology Review**, rivastigmine transdermal P
 ## 8. Author, License, and Disclaimer
 
 * **Author:** Aleksandr Loginov (`biilsun81@gmail.com`)
-* **License:** Original documentation, parameter tables, and curated clinical datasets in this repository are provided under the [MIT License](LICENSE). The simulation files (`.pksim5`, `.mbp3`, `.pkml`) incorporate building blocks from the Open Systems Pharmacology Suite ([GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)) and adapt the upstream dermal structure of **Hamadeh, Sevestre, & Edginton (2019)** (`Open-Systems-Pharmacology/Skin-permeation-model`).
+* **License:** Released under the [GNU General Public License v2.0 (GPL-2.0)](LICENSE), consistent with the Open Systems Pharmacology Suite (`PK-Sim®` / `MoBi®`) and adapting the upstream dermal structure of **Hamadeh, Sevestre, & Edginton (2019)** (`Open-Systems-Pharmacology/Skin-permeation-model`).
 * **Research-Only & Liability Disclaimer:** This PBPK model, associated parameterizations, and simulation outputs are provided **"AS IS"**, without warranty of any kind, express or implied, strictly for **scientific research and educational purposes**. The model represents a calibrated middle-out baseline with linear systemic clearance; it has not been qualified by any regulatory agency and **must not be used for medical advice, clinical decision-making, or patient dosing**. In no event shall the author be held liable for any claim, damages, or other liability arising from the use, interpretation, or modification of this repository.
