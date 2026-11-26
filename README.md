@@ -1,8 +1,8 @@
-# Mechanistic Dermal-Whole-Body PBPK Model of Rivastigmine Transdermal Patch in Humans (OSP Suite v12.3)
+# Coupled Dermal-Permeation and Whole-Body PBPK Model of Rivastigmine Transdermal Patch in Humans (OSP Suite v12.3)
 
-This open-source repository (MIT License) provides a coupled **dermal permeation and whole-body physiologically based pharmacokinetic (PBPK)** model for the **rivastigmine transdermal delivery system** (approved 5 cm², 10 cm², and 15 cm² strengths, plus the unapproved 20 cm² investigational clinical trial arm), implemented in **Open Systems Pharmacology (OSP) Suite v12.3** (`PK-Sim® 12.3` and `MoBi® Version 12.3 - Build 136`).
+This open-source repository provides a coupled **mechanistic dermal permeation and middle-out whole-body physiologically based pharmacokinetic (PBPK)** model for the **rivastigmine transdermal delivery system** (approved 5 cm², 10 cm², and 15 cm² strengths, plus the unapproved 20 cm² investigational clinical trial arm), implemented in **Open Systems Pharmacology (OSP) Suite v12.3** (`PK-Sim® 12.3` and `MoBi® Version 12.3 - Build 136`).
 
-The model links the multilayer diffusion-partition skin permeation framework of **Dancik et al. (2013)**—implemented in MoBi by **Hamadeh, Sevestre, & Edginton (2019)** (`Open-Systems-Pharmacology/Skin-permeation-model`)—to a whole-body human PBPK disposition model using the **Berezhkovskiy (2004)** tissue-partitioning method, lumped extrahepatic butyrylcholinesterase (BuChE) hydrolysis, and intravenous infusion data in healthy elderly subjects (**Morgan & Soh, 2017**).
+The model links the multilayer diffusion-partition skin permeation framework of **Dancik et al. (2013)**—implemented in MoBi by **Hamadeh, Sevestre, & Edginton (2019)** (`Open-Systems-Pharmacology/Skin-permeation-model`)—to a calibrated middle-out whole-body human PBPK disposition model (with linear first-order systemic clearance) using the **Berezhkovskiy (2004)** tissue-partitioning method, lumped extrahepatic butyrylcholinesterase (BuChE) hydrolysis, and intravenous infusion data in healthy elderly subjects (**Morgan & Soh, 2017**).
 
 ---
 
@@ -11,7 +11,7 @@ The model links the multilayer diffusion-partition skin permeation framework of 
 ```text
 Rivastigmine-Transdermal-PBPK/
 ├── README.md
-├── LICENSE                                                # MIT License
+├── LICENSE                                                # MIT License (see Section 8 for upstream OSP GPL-2.0 note)
 ├── CITATION.cff                                           # Citation metadata
 ├── models/
 │   ├── 01_Rivastigmine_Skin_MoBi.mbp3                     # Standalone multilayer skin & patch module (MoBi 12.3)
@@ -150,7 +150,7 @@ While simulated F (32.7%), t_max (1.00 h), and 1–6 h t_1/2 (1.67 h) agree with
 ### 4.2. Single-Dose Transdermal Patch Evaluation (0–36 h, Patch Removal at 24 h)
 Because `SC_total_thickness_hyd` and systemic CL were calibrated to 9.50 mg/24 h (10 cm²) and 86.6 L/h, the three 10 cm² AUC comparisons are partially conditioned by calibration, whereas **C_max, post-removal t_1/2, and cross-strength scaling to 5 cm² and 15 cm²** (14 comparisons) are unconditioned.
 
-Simulated peripheral venous concentrations (`Sim_Patch_10cm2_Full_PBPK`) reach 90%, 95%, 98%, and 99% of peak at **~7.7, 10.1, 13.4, and 15.9 h**, forming a plateau across 10–24 h (4.85 ng/mL at 24.0 h removal; numerical maximum at 24.3 h). Clinical median/mean t_max values (10.0–16.0 h) fall within this plateau window. Post-removal log-linear regression over 28–36 h (`R² > 0.999`, `λ_z = 0.279 h⁻¹`) yields **t_1/2,z = 2.48 h** (26–32 h: 2.68 h), compared with 2.25–3.02 h in Studies 2332/2335 and **3.4 h** in the FDA Patch label (§12.3). Note that the virtual individual weighs **74.9 kg** (64.5 y), whereas **Study 2335** (**Lefèvre et al., 2009**, p. 433) enrolled lighter young males: **White** (24.9 ± 4.0 y, **71.1 ± 5.6 kg**) and **Japanese** (26.9 ± 3.2 y, **63.2 ± 6.2 kg**).
+Simulated peripheral venous concentrations (`Sim_Patch_10cm2_Full_PBPK`) reach 90%, 95%, 98%, and 99% of peak at **~7.7, 10.1, 13.4, and 15.9 h**, forming a plateau across 10–24 h (4.85 ng/mL at 24.0 h removal; numerical maximum at 24.3 h). Clinical median/mean t_max values (10.0–16.0 h) fall within this plateau window. Post-removal log-linear regression over 28–36 h (`R² > 0.999`, `λ_z = 0.279 h⁻¹`) yields **t_1/2,z = 2.48 h** (26–32 h: 2.68 h), compared with 2.25–3.02 h in Studies 2332/2335, **~3 h** in the US FDA Patch label (§12.3), and **3.4 h** in the EU SmPC (§5.2). Note that the virtual individual weighs **74.9 kg** (64.5 y), whereas **Study 2335** (**Lefèvre et al., 2009**, p. 433) enrolled lighter young males: **White** (24.9 ± 4.0 y, **71.1 ± 5.6 kg**) and **Japanese** (26.9 ± 3.2 y, **63.2 ± 6.2 kg**).
 
 | Patch Size | Study & Cohort (**Single 24-h Application**) | PK Metric | Simulated (Periph. Venous) | Observed (Mean ± SD or Median) | Fold Error (Sim/Obs) |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -239,11 +239,11 @@ Per **FDA NDA 022-083 Clinical Pharmacology Review**, rivastigmine transdermal P
 15. **Mita S (indexed in PubMed as Nozaki S), Yamaguchi M, Lefèvre G.** Pharmacokinetic modeling to simulate the concentration-time profiles after dermal application of rivastigmine patch. *J Pharm Sci.* 2016;105(7):2213–2221. `doi:10.1016/j.xphs.2016.04.011` (`PMID: 27212635`)
 16. **US Food and Drug Administration (FDA).** *Exelon® Patch (rivastigmine transdermal system) Prescribing Information (§11, §12.3) & Clinical Pharmacology and Biopharmaceutics Reviews (NDA 022-083, 2007; Supplemental NDA 022-083/S-016 Review, Reference ID: 3171226, Aug 31, 2012, p. 202)*; *Exelon® Capsules and Oral Solution Prescribing Information (NDA 020-823, §11, §12.3, 2000)*.
 17. **European Medicines Agency (EMA) & Health Canada.** *Exelon / Prometax Summary of Product Characteristics (SmPC, §5.1, §5.2) & EPAR Scientific Discussion*; *Health Canada Exelon® Product Monograph*.
-    ---
+
 ---
 
 ## 8. Author, License, and Disclaimer
 
 * **Author:** Aleksandr Loginov (`biilsun81@gmail.com`)
-* **License:** Released under the [MIT License](LICENSE).
-* **Research-Only & Liability Disclaimer:** This PBPK model, associated parameterizations, and simulation outputs are provided **"AS IS"**, without warranty of any kind, express or implied, strictly for **scientific research and educational purposes**. They have not been qualified by any regulatory agency for clinical use and **must not be used for medical advice, clinical decision-making, or patient dosing**. In no event shall the author be held liable for any claim, damages, or other liability arising from the use, interpretation, or modification of this repository.
+* **License:** Original documentation, parameter tables, and curated clinical datasets in this repository are provided under the [MIT License](LICENSE). The simulation files (`.pksim5`, `.mbp3`, `.pkml`) incorporate building blocks from the Open Systems Pharmacology Suite ([GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)) and adapt the upstream dermal structure of **Hamadeh, Sevestre, & Edginton (2019)** (`Open-Systems-Pharmacology/Skin-permeation-model`).
+* **Research-Only & Liability Disclaimer:** This PBPK model, associated parameterizations, and simulation outputs are provided **"AS IS"**, without warranty of any kind, express or implied, strictly for **scientific research and educational purposes**. The model represents a calibrated middle-out baseline with linear systemic clearance; it has not been qualified by any regulatory agency and **must not be used for medical advice, clinical decision-making, or patient dosing**. In no event shall the author be held liable for any claim, damages, or other liability arising from the use, interpretation, or modification of this repository.
