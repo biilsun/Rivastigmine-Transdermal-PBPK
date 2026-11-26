@@ -8,7 +8,7 @@ authors:
     email: "biilsun81@gmail.com"
 version: 1.0.0
 date-released: "2026-11-26"
-license: MIT
+license: GPL-2.0-only
 keywords:
   - PBPK
   - rivastigmine
