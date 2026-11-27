@@ -6,6 +6,7 @@ authors:
   - family-names: "Loginov"
     given-names: "Aleksandr"
     email: "biilsun81@gmail.com"
+    orcid: "https://orcid.org/0009-0009-7346-2410"
 abstract: "Open-source coupled mechanistic dermal permeation (Dancik et al., 2013) and calibrated middle-out whole-body human PBPK model (Berezhkovskiy tissue partitioning, linear first-order BuChE clearance) for the rivastigmine transdermal patch (5, 10, 15, and 20 cm²) in Open Systems Pharmacology Suite v12.3 (PK-Sim and MoBi)."
 version: 1.0.0
 doi: "10.5281/zenodo.24566554"
