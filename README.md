@@ -245,6 +245,6 @@ Per **FDA NDA 022-083 Clinical Pharmacology Review**, rivastigmine transdermal P
 
 ## 8. Author, License, and Disclaimer
 
-* **Author:** Aleksandr Loginov (`biilsun81@gmail.com`)
+* **Author:** Aleksandr Loginov ([ORCID: 0009-0009-7346-2410](https://orcid.org/0009-0009-7346-2410), `biilsun81@gmail.com`)
 * **License:** Released under the [GNU General Public License v2.0 (GPL-2.0)](LICENSE), consistent with the Open Systems Pharmacology Suite (`PK-Sim®` / `MoBi®`) and adapting the upstream dermal structure of **Hamadeh, Sevestre, & Edginton (2019)** (`Open-Systems-Pharmacology/Skin-permeation-model`).
 * **Research-Only & Liability Disclaimer:** This PBPK model, associated parameterizations, and simulation outputs are provided **"AS IS"**, without warranty of any kind, express or implied, strictly for **scientific research and educational purposes**. The model represents a calibrated middle-out baseline with linear systemic clearance; it has not been qualified by any regulatory agency and **must not be used for medical advice, clinical decision-making, or patient dosing**. In no event shall the author be held liable for any claim, damages, or other liability arising from the use, interpretation, or modification of this repository.
